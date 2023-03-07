@@ -8,7 +8,7 @@ def is_file_exists(path_file, instance):
 
 
 def process(path_file, instance):
-    content = txt_importer(path_file)    
+    content = txt_importer(path_file)
 
     if not is_file_exists(path_file, instance):
         data = {
@@ -23,7 +23,6 @@ def process(path_file, instance):
 
 def remove(instance):
     try:
-        
         path_file = instance.dequeue()["nome_do_arquivo"]
         sys.stdout.write(f"Arquivo {path_file} removido com sucesso\n")
 
